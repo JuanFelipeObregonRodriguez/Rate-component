@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="./src/css/index.css">
+
+  <title>Interactive rating component</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div id="ratingCard">
+      <div class="star"><img src="./src/assets/icon-star.svg" alt=""></div>
+
+      <div class="text">
+        <h2>How did we do?</h2>
+
+        <p> Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!</p>
+      </div>
+
+      <div class="rate-selector">
+        <div class="button-rating">
+          <button class="vote-btn" value="1">1</button>
+          <button class="vote-btn" value="2">2</button>
+          <button class="vote-btn" value="3">3</button>
+          <button class="vote-btn" value="4">4</button>
+          <button class="vote-btn" value="5">5</button>
+        </div>
+        <button id="submitRatingBtn">submit</button>
+      </div>
+    </div>
+
+    <div id="feedbackCard" id="feedback">
+
+      <img src="./src/assets/illustration-thank-you.svg" alt="">
+      <div class="vote-bage">
+        you selected <span id="numberRating"></span>out of 5
+      </div>
+      <div class="text">
+        <h2> Thank you!</h2>
+        <p> We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch! </p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="./src/js/index.js"></script>
+
+</body>
+
+</html>
