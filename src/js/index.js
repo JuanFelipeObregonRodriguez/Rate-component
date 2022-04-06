@@ -13,18 +13,21 @@ numberButtons.forEach((button)=>{
 const sumitted = ()=>{
 
   const htmlText =
-   `<div id="feedbackCard" id="feedback">
+   `
+   <div class="containerID">
+   <div id="feedbackCard" class="feedback">
 
-  <img src="./src/assets/illustration-thank-you.svg" alt="">
-  <div class="vote-bage">
-    you selected ${selectedRating} out of 5
+  <img src="./src/assets/illustration-thank-you.svg" class="logoF"alt="">
+  <div class="vote-bagde">
+    <p>you selected ${selectedRating} out of 5</p>
   </div>
-  <div class="text">
+  <div class="textF">
     <h2> Thank you!</h2>
     <p> We appreciate you taking the time to give a rating. If you ever need more support,
       don’t hesitate to get in touch! </p>
   </div>
 
+</div>
 </div>`
 
 bodyPrint.innerHTML = htmlText;
